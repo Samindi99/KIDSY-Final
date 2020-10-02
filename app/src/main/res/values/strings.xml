@@ -51,4 +51,14 @@
     <string name="invalid_password">Enter 6 digit password</string>
     <string name="invalid_confirm_password">Password does not match</string>
 
+    //admin Employee
+    <string name="EmpId">Please Enter Employee Id</string>
+    <string name="EmpName">Please Enter Employee Name</string>
+    <string name="EmpPhone">Please Enter Phone Number</string>
+    <string name="EmpSalary">Please Enter the Salary</string>
+    <string name="btnEsave">Save</string>
+    <string name="btnEshow">Show</string>
+    <string name="btnEupdate">Update</string>
+    <string name="btnEdelete">Delete</string>
+
 </resources>
