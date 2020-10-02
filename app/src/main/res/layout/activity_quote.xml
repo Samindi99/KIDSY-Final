@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Quote"
-    android:background="@drawable/bg15">
+    android:background="@drawable/b13">
 
     <ImageView
         android:id="@+id/Quoteimage"
@@ -15,8 +15,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.449"
-        app:srcCompat="@drawable/image_2" />
+        app:layout_constraintVertical_bias="0.63"
+        app:srcCompat="@drawable/image1" />
 
     <TextView
         android:id="@+id/tv_author"
@@ -24,27 +24,26 @@
         android:layout_height="20dp"
         android:text="@string/author"
         android:textAlignment="center"
-        android:textColor="#ffffff"
+        android:textColor="#3A3C28"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="137dp" />
+        tools:layout_editor_absoluteY="221dp" />
 
     <TextView
         android:id="@+id/topic4"
         android:layout_width="312dp"
         android:layout_height="45dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="140dp"
         android:fontFamily="sans-serif-black"
-        android:shadowColor="#ffffff"
+        android:shadowColor="#CDDC39"
         android:text="@string/topic"
         android:textAlignment="center"
-        android:textColor="#ffffff"
+        android:textColor="#575E57"
         android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
