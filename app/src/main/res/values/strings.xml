@@ -10,46 +10,17 @@
     //login
     <string name="log">Log into My Account</string>
     <string name="rem">Remember Me</string>
-    <string name="fpwd">Forgot Password...?</string>
     <string name="admin">I am an Admin</string>
     <string name="nadmin">I am not an Admin</string>
-
 
     //Entertainment
     <string name="ent">Entertainment</string>
     <string name="quote">Quote of the Day</string>
-    <string name="cartoon">Cartoon Stories</string>
-    <string name="videos">Motivational Videos</string>
 
     //Quote of the day
     <string name="topic">Quote of the Day</string>
     <string name="author"> Creator: Plato</string>
-    <string name="des">Many things can be gained to the life through reading </string>
 
-    //Cartoon Stories
-    <string name="carton">Cartoon Stories</string>
-
-    //Cartoon Story in Detail
-    <string name="story1">Story 1</string>
-    <string name="sauthor">Creator: Isamaj</string>
-    <string name="desc"> In this story We can learn that the Unity is he biggest Strength</string>
-
-    //customer management
-    <string name="ecusname">Enter Customer Name</string>
-    <string name="ecusemail">Enter Customer Email</string>
-    <string name="ecusphone">Enter Customer Phone Number</string>
-    <string name="ecususername">Enter Customer Username</string>
-    <string name="ecuspassword">Enter Customer Password</string>
-    <string name="btnsave">Save</string>
-    <string name="btnshow">Show</string>
-    <string name="btnupdate">Update</string>
-    <string name="btndelete">Delete</string>
-    <string name="invalid_name">Please Enter Valid Name</string>
-    <string name="invalid_mobile">Please Enter a Valid Phone Number</string>
-    <string name="invalid_email">Enter a valid email address</string>
-    <string name="invalid_username">Enter a valid Username</string>
-    <string name="invalid_password">Enter 6 digit password</string>
-    <string name="invalid_confirm_password">Password does not match</string>
 
     //admin Employee
     <string name="EmpId">Please Enter Employee Id</string>

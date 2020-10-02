@@ -13,39 +13,23 @@
         android:layout_height="317dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.322"
+        app:layout_constraintVertical_bias="0.449"
         app:srcCompat="@drawable/image_2" />
 
     <TextView
         android:id="@+id/tv_author"
         android:layout_width="149dp"
         android:layout_height="20dp"
-        android:layout_marginTop="16dp"
         android:text="@string/author"
         android:textAlignment="center"
         android:textColor="#ffffff"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Quoteimage" />
-
-    <TextView
-        android:id="@+id/tv_des"
-        android:layout_width="277dp"
-        android:layout_height="68dp"
-        android:layout_marginTop="12dp"
-        android:text="@string/des"
-        android:textAlignment="center"
-        android:textColor="#ffffff"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.319"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_author" />
+        tools:layout_editor_absoluteY="137dp" />
 
     <TextView
         android:id="@+id/topic4"
@@ -63,18 +47,5 @@
         app:layout_constraintHorizontal_bias="0.595"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/unlike_btn"
-        android:layout_width="59dp"
-        android:layout_height="63dp"
-        android:scaleType="fitStart"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.86"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6"
-        app:srcCompat="@drawable/heart" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

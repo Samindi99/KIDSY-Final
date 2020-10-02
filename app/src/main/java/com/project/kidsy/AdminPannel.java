@@ -12,7 +12,7 @@ import io.paperdb.Paper;
 
 public class AdminPannel extends AppCompatActivity {
 
-    private Button LogoutBtn, QuoteBtn, Videobtn;
+    private Button LogoutBtn, QuoteBtn, AddEmp;
 
 
     @Override
@@ -22,7 +22,7 @@ public class AdminPannel extends AppCompatActivity {
 
         LogoutBtn=findViewById(R.id.logout_btn);
         QuoteBtn=findViewById(R.id.qadd);
-        Videobtn=findViewById(R.id.vadd);
+        AddEmp=findViewById(R.id.add_emp);
 
 
         LogoutBtn.setOnClickListener(new View.OnClickListener() {
@@ -44,13 +44,15 @@ public class AdminPannel extends AppCompatActivity {
             }
         });
 
-        Videobtn.setOnClickListener(new View.OnClickListener() {
+
+        AddEmp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AdminPannel.this,AdminVideo.class);
+                Intent intent = new Intent(AdminPannel.this,AdminEmployee.class);
                 startActivity(intent);
             }
         });
+
 
     }
 }

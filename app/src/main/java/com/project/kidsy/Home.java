@@ -11,7 +11,7 @@ import io.paperdb.Paper;
 
 public class Home extends AppCompatActivity {
 
-    private Button LogoutBtn;
+    private Button LogoutBtn, Ent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,16 @@ public class Home extends AppCompatActivity {
 
                 Intent intent = new Intent(Home.this,Welcome.class);
                 startActivity(intent);
+            }
+        });
+
+        Ent=findViewById(R.id.btn_Ent);
+        Ent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this,Entertainment.class);
+                startActivity(intent);
+
             }
         });
 
