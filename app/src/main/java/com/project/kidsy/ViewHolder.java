@@ -21,7 +21,6 @@ import com.google.android.exoplayer2.trackselection.TrackSelector;
 import com.google.android.exoplayer2.ui.PlayerView;
 import com.google.android.exoplayer2.upstream.BandwidthMeter;
 import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter;
-import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
 import com.google.android.exoplayer2.upstream.DefaultHttpDataSourceFactory;
 
 public class ViewHolder extends RecyclerView.ViewHolder {
@@ -32,24 +31,9 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     public ViewHolder(@NonNull View itemView) {
 
         super(itemView);
-        itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mClickListener.onItemClick(view,getAdapterPosition());
-            }
-        });
-
-        itemView.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View view) {
-                mClickListener.onItemClick(view,getAdapterPosition());
-                return false;
-            }
-        });
-
     }
 
-    public void setExoplayer(Application application , String name, String Videourl){
+    public void setExoplayer(Application application, String name, String VideoUrl){
 
         TextView textView = itemView.findViewById(R.id.tv_item);
         playerView = itemView.findViewById(R.id.exoplayer_item);
@@ -60,27 +44,17 @@ public class ViewHolder extends RecyclerView.ViewHolder {
             BandwidthMeter bandwidthMeter = new DefaultBandwidthMeter.Builder(application).build();
             TrackSelector trackSelector = new DefaultTrackSelector(new AdaptiveTrackSelection.Factory(bandwidthMeter));
             exoPlayer = (SimpleExoPlayer) ExoPlayerFactory.newSimpleInstance(application);
-            Uri video = Uri.parse(Videourl);
+            Uri video = Uri.parse(VideoUrl);
             DefaultHttpDataSourceFactory dataSourceFactory = new DefaultHttpDataSourceFactory("video");
             ExtractorsFactory extractorsFactory = new DefaultExtractorsFactory();
-            MediaSource mediaSource = new ExtractorMediaSource(video,dataSourceFactory,extractorsFactory,null, null);
+            MediaSource mediaSource = new ExtractorMediaSource(video,dataSourceFactory,extractorsFactory,null,null);
             playerView.setPlayer(exoPlayer);
             exoPlayer.prepare(mediaSource);
             exoPlayer.setPlayWhenReady(false);
 
         }catch (Exception e){
-            Log.e("ViewHolder","exoplayer error"+ e.toString());
+            Log.e("ViewHolder", "exoplayer error" + e.toString());
         }
-    }
 
-    private ViewHolder.Clicklistener mClickListener;
-
-    public interface Clicklistener{
-        void onItemClick(View view, int position);
-        void onItemLongClick(View view, int position);
-    }
-
-    public void setOnClicklistener(ViewHolder.Clicklistener clicklistener){
-        mClickListener = clicklistener;
     }
 }

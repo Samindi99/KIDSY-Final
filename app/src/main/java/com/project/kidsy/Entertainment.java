@@ -31,5 +31,20 @@ public class Entertainment extends AppCompatActivity {
             }
 
         });
+
+        btn6=(Button)findViewById(R.id.vm_btn);
+        btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(Entertainment.this,MotivationalVideo.class);
+                startActivity(intent);
+
+                Toast toast = Toast.makeText(getApplicationContext(), "Loading", Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.BOTTOM | Gravity.CENTER, 0, 0);
+                toast.show();
+            }
+
+        });
+
     }
 }

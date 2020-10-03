@@ -53,6 +53,7 @@ public class Welcome extends AppCompatActivity {
             }
         });
 
+        //remember me
         String UserPhoneKey=Paper.book().read(Prevalent.UserPhoneKey);
         String UserPasswordKey=Paper.book().read(Prevalent.UserPasswordKey);
 
@@ -68,6 +69,7 @@ public class Welcome extends AppCompatActivity {
         }
     }
 
+    //login validating
     private void AllowAccess(final String phone, final String password) {
 
         final DatabaseReference RootRef;

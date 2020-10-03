@@ -85,6 +85,8 @@ public class Login extends AppCompatActivity {
         String phone = InputPhoneNumber.getText().toString();
         String password = InputPassword.getText().toString();
 
+        //validating phone and password
+
         if (TextUtils.isEmpty(phone))
         {
             Toast.makeText(this, "Please write your phone number...", Toast.LENGTH_SHORT).show();

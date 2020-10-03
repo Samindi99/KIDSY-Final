@@ -11,8 +11,6 @@
 
     <item android:id="@+id/settings_item"
         android:icon="@drawable/ic_baseline_search_24"
-        android:title="video"
-        app:actionViewClass="androidx.appcompat.widget.SearchView" />
-
+        android:title="video" />
 
 </menu>

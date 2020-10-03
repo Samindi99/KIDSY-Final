@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">KIDSY</string>
 
+    <string name="app_name">KIDSY</string>
     //Registration
     <string name="name">Name</string>
     <string name="pno">Phone number</string>
@@ -19,7 +19,7 @@
 
     //Quote of the day
     <string name="topic">Quote of the Day</string>
-    <string name="author"> Creator: Plato</string>
+    <string name="author"> Created By: TAYLOR SWIFT</string>
 
 
     //admin Employee

@@ -48,6 +48,7 @@ public class Register extends AppCompatActivity {
 
     }
 
+
     private void CreateAccount(){
         String name=InputName.getText().toString();
         String phone=InputPhoneNumber.getText().toString();

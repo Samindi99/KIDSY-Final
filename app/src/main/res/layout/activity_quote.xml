@@ -20,15 +20,19 @@
 
     <TextView
         android:id="@+id/tv_author"
-        android:layout_width="149dp"
-        android:layout_height="20dp"
+        android:layout_width="291dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="196dp"
         android:text="@string/author"
         android:textAlignment="center"
         android:textColor="#3A3C28"
         android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/Quoteimage"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="221dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387" />
 
     <TextView
         android:id="@+id/topic4"

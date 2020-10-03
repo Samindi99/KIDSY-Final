@@ -92,16 +92,16 @@ public class AdminEmployee extends AppCompatActivity {
                 dbRef=FirebaseDatabase.getInstance().getReference().child("Employee");
                 try {
                     if (TextUtils.isEmpty(txtId.getText().toString()))
-                        Toast.makeText(getApplicationContext(), "Empty Employee ID", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Enter Employee ID", Toast.LENGTH_SHORT).show();
 
                     else if (TextUtils.isEmpty(txtName.getText().toString()))
-                        Toast.makeText(getApplicationContext(), "Empty Employee Name", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Enter Employee Name", Toast.LENGTH_SHORT).show();
 
                     else if (TextUtils.isEmpty(txtPhone.getText().toString()))
-                        Toast.makeText(getApplicationContext(), "Empty Employee Contact Number", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Enter Employee Contact Number", Toast.LENGTH_SHORT).show();
 
                     else if (TextUtils.isEmpty(txtSalary.getText().toString()))
-                        Toast.makeText(getApplicationContext(), "Empty Employee Salary", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Enter Employee Salary", Toast.LENGTH_SHORT).show();
 
                     else {
                         emp.setId(txtId.getText().toString().trim());

@@ -8,6 +8,8 @@
     android:background="@drawable/cusback"
     tools:context=".AdminEmployee">
 
+
+
     <EditText
         android:id="@+id/emp_id_et"
         android:layout_width="match_parent"
