@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Admin_Video"></activity>
         <activity android:name=".Entertainment" />
         <activity android:name=".AdminEmployee" />
         <activity android:name=".ImagesActivity" />
